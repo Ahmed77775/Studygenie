@@ -13,6 +13,7 @@
 2. Added local setup and run instructions in `README.md`.
 3. Published the project to the public GitHub repository below. The initial GitHub README commit was merged without force-pushing.
 4. Started the app locally and exposed its web port with a temporary Cloudflare Quick Tunnel for the submission demo.
+5. Added this repository's `AGENTS.md` with project details verified from the source and test helpers.
 
 ## Evidence and results
 
