@@ -1,0 +1,42 @@
+{
+    // Run and Debug (Ctrl+Shift+D): pick one of these, then press F5.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "StudyGenie",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/studygenie.py",
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "StudyGenie on phone/tablet (web)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/studygenie.py",
+            "args": ["--web"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            // Use this one inside the Dev Container (it has no screen).
+            "name": "StudyGenie – web, inside the container",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/studygenie.py",
+            "args": ["--web", "--no-browser"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run all tests",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "unittest",
+            "args": ["discover", "-v"],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
+        }
+    ]
+}

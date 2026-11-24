@@ -1,0 +1,8 @@
+{
+    // VS Code suggests these when the folder is opened.
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-vscode-remote.remote-containers"
+    ]
+}

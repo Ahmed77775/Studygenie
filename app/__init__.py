@@ -1,0 +1,1 @@
+"""StudyGenie Plus application package."""

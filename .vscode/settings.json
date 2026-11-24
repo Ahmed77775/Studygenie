@@ -1,0 +1,24 @@
+{
+    // Every way of running Python in this folder uses the project's own
+    // environment (.venv), never another Python installed on the computer.
+    "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+    "python.terminal.activateEnvironment": true,
+    "code-runner.executorMap": {
+        // "&" lets PowerShell run a quoted program path.
+        "python": "& \"$workspaceRoot\\.venv\\Scripts\\python.exe\" -u"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.fileDirectoryAsCwd": false,
+
+    // Tests: Testing panel (beaker icon) runs everything in tests/.
+    "python.testing.unittestEnabled": true,
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestArgs": ["-v", "-s", ".", "-p", "test_*.py"],
+
+    // Keep generated folders out of the file list.
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        ".venv": true
+    }
+}

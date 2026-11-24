@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# The project's own Python environment (recreate with: python -m venv .venv,
+# then .venv\Scripts\python -m pip install -r requirements.txt)
+.venv/
+
+# Personal StudyGenie data (notes, progress, PIN hash) — keep it local
+studygenie_data.db
+studygenie_data.json
+backups/
+
+# Editor / OS clutter (the project's shared VS Code settings and Run buttons are kept)
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+Thumbs.db
+desktop.ini
+
+# VS Code Code Runner scratch file
+tempCodeRunnerFile.py
